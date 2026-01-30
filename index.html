@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B J S V D Durga | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#333;
+    transition:0.3s;
+}
+
+body.dark{
+    background:#0f172a;
+    color:#e5e7eb;
+}
+
+body.dark nav,
+body.dark footer{
+    background:#020617;
+}
+
+body.dark .project-card{
+    background:#1e293b;
+}
+
+/* Dark toggle */
+.toggle-btn{
+    position:fixed;
+    top:15px;
+    right:15px;
+    background:#2563eb;
+    color:white;
+    padding:8px 12px;
+    border-radius:20px;
+    cursor:pointer;
+    z-index:1000;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1f2933;
+    padding:15px 30px;
+}
+
+.logo{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* Hero */
+#hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(to right,#2563eb,#38bdf8);
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    background:white;
+    color:#2563eb;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Sections */
+section{
+    padding:60px 30px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* About */
+#about img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+/* Projects */
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    background:#f3f3f3;
+    width:230px;
+    padding:18px;
+    border-radius:14px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+}
+
+.project-card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.project-title{
+    background:#2f7df6;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    margin:15px 0;
+    font-size:14px;
+}
+
+.project-desc{
+    font-size:13px;
+}
+
+/* Skills */
+.skills-container span{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:8px 15px;
+    margin:8px;
+    border-radius:20px;
+}
+
+/* Resume */
+.resume-btn{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    background:#1f2933;
+    color:white;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="toggle-btn" onclick="toggleDark()">🌙 / ☀</div>
+
+<nav>
+    <div class="logo">B J S V D Durga</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="hero">
+    <h1>Hello, I'm B J S V D Durga</h1>
+    <p>Frontend & Python Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <!-- DIRECT IMAGE LINK -->
+    <img src="https://i.postimg.cc/DyWqzYQn/Whats-App-Image-2026-01-29-at-11-33-57-PM.jpg" alt="Profile Photo">
+
+    <p>
+        I am a passionate frontend and Python developer who loves building
+        clean, responsive, and user-friendly web applications using
+        HTML, CSS, JavaScript, and Python.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <img src="https://i.postimg.cc/CxjVvdFn/project1-jpg.jpg">
+            <div class="project-title">Blood Donation Management System</div>
+            <p class="project-desc">Manages donor details and blood availability.</p>
+        </div>
+
+        <div class="project-card">
+            <img src=https://i.postimg.cc/YqVHwjR8/Whats-App-Image-2026-01-29-at-11-29-51-PM.jpg>
+            <div class="project-title">Health & Hygiene Awareness System</div>
+            <p class="project-desc">Promotes health awareness and hygiene data.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <span>C</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Teamwork</span>
+        <span>Problem solving</span>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+    <a href="https://i.postimg.cc/zB0fw8NY/resume-5.png" class="resume-btn">📄 Download Resume</a>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 jyothibalasadi7@gmail.com</p>
+    <p>📞 7569298238</p>
+    <p>📍Katrenikona, Andhra Pradesh, India</p>
+        <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/jyothibalasadi7" target="_blank">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 B J S V D Durga</p>
+</footer>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
